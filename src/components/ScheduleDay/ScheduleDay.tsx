@@ -13,9 +13,20 @@ import {
 } from "./ScheduleDay.styles";
 import { H3 } from "../Header.styles";
 import { getFormattedDate, getFormattedTime } from "../utils";
+import {
+  Draggable,
+  DraggableProvided,
+  Droppable,
+  DroppableProvided,
+} from "react-beautiful-dnd";
 
-const ScheduleDay = ({ item }: { item: ScheduleItem }) => {
-  console.log("item: ", item);
+const ScheduleDay = ({
+  item,
+  index,
+}: {
+  item: ScheduleItem;
+  index: number;
+}) => {
   const numberOfOperatives = useMemo(() => {
     return item.visits.reduce(
       (total, visit) => total + visit.operatives.length,
@@ -53,9 +64,32 @@ const ScheduleDay = ({ item }: { item: ScheduleItem }) => {
           </SubtitleContainer>
         </Heading>
         <VisitBody>
-          {visitsByCompletionTime?.map((visit: Visit) => {
-            return <VisitTile visit={visit} />;
-          })}
+          <Droppable key={`${item.date}`} droppableId={`${item.date}`}>
+            {(provided: DroppableProvided) => (
+              <div {...provided.droppableProps} ref={provided.innerRef}>
+                {visitsByCompletionTime?.map((visit: Visit, index) => {
+                  return (
+                    <Draggable
+                      draggableId={`${visit.id}`}
+                      key={`${visit.id}`}
+                      index={index}
+                    >
+                      {(provided: DraggableProvided) => (
+                        <div
+                          ref={provided.innerRef}
+                          {...provided.draggableProps}
+                          {...provided.dragHandleProps}
+                        >
+                          <VisitTile visit={visit} index={index} />
+                        </div>
+                      )}
+                    </Draggable>
+                  );
+                })}
+                {provided.placeholder}
+              </div>
+            )}
+          </Droppable>
         </VisitBody>
       </Flex>
     </Container>

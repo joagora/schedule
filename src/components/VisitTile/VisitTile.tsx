@@ -31,7 +31,7 @@ const getTaskMapping = (
   }
 };
 
-const VisitTile = ({ visit }: { visit: Visit }) => {
+const VisitTile = ({ visit, index }: { visit: Visit; index: number }) => {
   const visitDuration = useMemo(() => {
     const duration = moment.duration(
       moment(visit.estimated_completion_time).diff(moment(visit.start_time))

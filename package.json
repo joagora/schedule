@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-beautiful-dnd": "^13.1.8",
     "json-server": "^1.0.0-alpha.23"
   }
 }
