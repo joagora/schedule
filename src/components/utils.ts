@@ -7,4 +7,8 @@ const getFormattedDate = (date: string) => {
 const getFormattedTime = (date: string) => {
   return moment(date).format("hh:mm A");
 };
-export { getFormattedDate, getFormattedTime };
+
+const getWeekDay = (date: string) => {
+  return moment(date).format("dddd");
+};
+export { getFormattedDate, getFormattedTime, getWeekDay };

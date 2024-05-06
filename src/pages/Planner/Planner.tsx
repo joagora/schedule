@@ -12,22 +12,20 @@ import {
   DroppableProvided,
 } from "react-beautiful-dnd";
 import { useEffect, useState } from "react";
+import useUpdateFetch from "../../hooks/useUpdateFetch";
 
 const Background = styled(Flex)`
   background-color: ${colors.background};
 `;
 const Planner = () => {
   const [items, setItems] = useState<ScheduleItem[]>([]);
-  const [days, setDays] = useState<string[]>([]);
+
   const { data, isLoading, error } = useFetch("http://localhost:8080/schedule");
+  const { usePost: updateSchedule, error: isUpdateError } = useUpdateFetch();
 
   useEffect(() => {
-    setItems(data);
-    setDays(
-      data.map((item: ScheduleItem) => {
-        return item.date;
-      })
-    );
+    if (!data) return;
+    setItems(data.schedule);
   }, [data]);
 
   if (!data || isLoading) {
@@ -57,9 +55,16 @@ const Planner = () => {
       return;
     }
     const removedItem = sourceDay.visits.splice(source.index, 1)[0];
+    removedItem.order = destination.index + 1;
     destinationDay?.visits.splice(destination.index, 0, removedItem);
     setItems(itemsCopy);
+
+    updateSchedule("http://localhost:8080/schedule", { schedule: itemsCopy });
   };
+
+  if (isUpdateError) {
+    return <p>Oops, something went wrong updating your schedule</p>;
+  }
 
   return (
     <Background flexDirection="column" alignItems="center">
@@ -72,14 +77,8 @@ const Planner = () => {
           >
             {(provided: DroppableProvided) => (
               <div ref={provided.innerRef}>
-                {data.map((item: ScheduleItem, index: number) => {
-                  return (
-                    <>
-                      {item.visits.length !== 0 && (
-                        <ScheduleDay item={item} index={index} />
-                      )}
-                    </>
-                  );
+                {items.map((item: ScheduleItem, index: number) => {
+                  return <ScheduleDay key={`${item.id}`} item={item} />;
                 })}
                 {provided.placeholder}
               </div>

@@ -6,6 +6,7 @@ export interface ScheduleItem {
 
 export interface Visit {
   id: string;
+  order: number;
   operatives: Operative[];
   start_time: string;
   site: {
