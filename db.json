@@ -2,7 +2,13 @@
   "schedule": {
     "schedule": [
       {
+        "id": "ae81aa58-c607-48eb-bf28-651763647677",
         "date": 1711929600000,
+        "visits": []
+      },
+      {
+        "id": "fcf79722-9cf4-48d5-8ba7-5a4f7fc8c282",
+        "date": 1712016000000,
         "visits": [
           {
             "id": "c2669a5b-a768-4347-b392-a9195d17af72",
@@ -28,19 +34,11 @@
               "city": "Nottingham"
             },
             "task": "LAWN_MOWING",
-            "estimated_completion_time": 1712164800000
-          }
-        ]
-      },
-      {
-        "date": 1712016000000,
-        "visits": []
-      },
-      {
-        "date": 1712102400000,
-        "visits": [
+            "estimated_completion_time": 1712164800000,
+            "order": 1
+          },
           {
-            "id": "d7ea6686-dcc5-4f23-a6f3-79111f624eb2",
+            "id": "d3757773-033c-49fd-8549-e8b39b26e8ed",
             "operatives": [
               {
                 "first_name": "Tony",
@@ -63,11 +61,18 @@
               "city": "Nottingham"
             },
             "task": "LAWN_SOWING",
-            "estimated_completion_time": 1712169000000
+            "estimated_completion_time": 1712169000000,
+            "order": 1
           }
         ]
       },
       {
+        "id": "f04e1bc6-1e73-4f80-9537-7ae8f32ddb5f",
+        "date": 1712102400000,
+        "visits": []
+      },
+      {
+        "id": "4b4de0fa-1e59-4fa5-8072-6682873976f3",
         "date": 1712188800000,
         "visits": [
           {
@@ -116,15 +121,13 @@
               "city": "Nottingham"
             },
             "task": "LAWN_MOWING",
-            "estimated_completion_time": 1712307000000
+            "estimated_completion_time": 1712307000000,
+            "order": 1
           }
         ]
       },
       {
-        "date": 1712275200000,
-        "visits": []
-      },
-      {
+        "id": "42b92c43-7cdb-42ba-bbef-a5790b361811",
         "date": 1712361600000,
         "visits": [
           {
@@ -204,10 +207,51 @@
         ]
       },
       {
+        "id": "ba05ec76-3f1b-4c32-96c6-f4822cad09cc",
         "date": 1712448000000,
-        "visits": []
+        "visits": [
+          {
+            "id": "55f58575-9093-47d7-bc41-8c2ea04a9869",
+            "operatives": [
+              {
+                "first_name": "Regina",
+                "last_name": "Lau"
+              }
+            ],
+            "start_time": 1712587800000,
+            "site": {
+              "client": "John Doe",
+              "address_line_1": "2 Upper Bannisters Way",
+              "post_code": "WS15 1SS",
+              "city": "Hawksyard"
+            },
+            "task": "LAWN_MOWING",
+            "estimated_completion_time": 1712592600000,
+            "order": 1
+          },
+          {
+            "id": "1cd83386-2c20-4c19-ae83-6c0022921885",
+            "operatives": [
+              {
+                "first_name": "Regina",
+                "last_name": "Lau"
+              }
+            ],
+            "start_time": 1712587800000,
+            "site": {
+              "client": "John Doe",
+              "address_line_1": "2 Upper Bannisters Way",
+              "post_code": "WS15 1SS",
+              "city": "Hawksyard"
+            },
+            "task": "LAWN_MOWING",
+            "estimated_completion_time": 1712592600000,
+            "order": 2
+          }
+        ]
       },
       {
+        "id": "61448060-0a42-4242-88bf-c8f90757c14c",
         "date": 1712534400000,
         "visits": [
           {
@@ -227,29 +271,17 @@
             },
             "task": "HEDGE_PRUNING",
             "estimated_completion_time": 1712577000000
-          },
-          {
-            "id": "55f58575-9093-47d7-bc41-8c2ea04a9869",
-            "operatives": [
-              {
-                "first_name": "Regina",
-                "last_name": "Lau"
-              }
-            ],
-            "start_time": 1712587800000,
-            "site": {
-              "client": "John Doe",
-              "address_line_1": "2 Upper Bannisters Way",
-              "post_code": "WS15 1SS",
-              "city": "Hawksyard"
-            },
-            "task": "LAWN_MOWING",
-            "estimated_completion_time": 1712592600000
           }
         ]
       },
       {
+        "id": "de012dc6-9de6-4795-b4ea-e8881eec1e1e",
         "date": 1712620800000,
+        "visits": []
+      },
+      {
+        "id": "91115f3b-9a0d-495c-91bc-5001434abba2",
+        "date": 1712707200000,
         "visits": [
           {
             "id": "8aaeb4e8-1f72-49af-9c05-cf33a50c5b0f",
@@ -281,101 +313,41 @@
         ]
       },
       {
-        "date": 1712707200000,
-        "visits": []
-      },
-      {
+        "id": "2b943936-41ee-4793-9bbd-8e3945efc08e",
         "date": 1712793600000,
         "visits": []
       },
       {
+        "id": "5be8f23d-bf35-402f-b2fb-75469d47c0af",
         "date": 1712880000000,
-        "visits": [
-          {
-            "id": "cbd60668-6e77-4d7c-87d6-532d65929568",
-            "operatives": [
-              {
-                "first_name": "Arya",
-                "last_name": "Stark"
-              }
-            ],
-            "start_time": 1712575200000,
-            "site": {
-              "client": "Google",
-              "address_line_1": "Google lane",
-              "post_code": "NE1ABC",
-              "city": "Nottingham"
-            },
-            "task": "HEDGE_PRUNING",
-            "estimated_completion_time": 1712577000000
-          },
-          {
-            "id": "55f58575-9093-47d7-bc41-8c2ea04a9869",
-            "operatives": [
-              {
-                "first_name": "Regina",
-                "last_name": "Lau"
-              }
-            ],
-            "start_time": 1712587800000,
-            "site": {
-              "client": "John Doe",
-              "address_line_1": "2 Upper Bannisters Way",
-              "post_code": "WS15 1SS",
-              "city": "Hawksyard"
-            },
-            "task": "LAWN_MOWING",
-            "estimated_completion_time": 1712592600000
-          }
-        ]
+        "visits": []
       },
       {
+        "id": "a90e9c32-dff9-4d6g-93h2-9c83187fb6fr",
         "date": 1713052800000,
         "visits": []
       },
       {
+        "id": "c00f9c32-dfb9-4d65-93g2-9c83147fb6f7",
         "date": 1713139200000,
         "visits": []
       },
       {
+        "id": "c9ge9c32-ffb9-fd65-93d2-9c8318afb6fa",
         "date": 1713225600000,
         "visits": []
       },
       {
+        "id": "af0e9c32-afb9-4d65-93f2-9c83187fb6f4",
         "date": 1713312000000,
         "visits": []
       },
       {
+        "id": "f0c0514f-b65b-4d1a-b2ef-5f33da13fe29",
         "date": 1713398400000,
         "visits": [
           {
-            "id": "d7ea6686-dcc5-4f23-a6f3-79111f624eb2",
-            "operatives": [
-              {
-                "first_name": "Tony",
-                "last_name": "Stark"
-              },
-              {
-                "first_name": "Thor",
-                "last_name": "Odinson"
-              },
-              {
-                "first_name": "Natasha",
-                "last_name": "Romanoff"
-              }
-            ],
-            "start_time": 1712161200000,
-            "site": {
-              "client": "Google",
-              "address_line_1": "Google lane",
-              "post_code": "NE1ABC",
-              "city": "Nottingham"
-            },
-            "task": "LAWN_SOWING",
-            "estimated_completion_time": 1712169000000
-          },
-          {
-            "id": "4a062579-98e3-4b88-9eb0-c670d5bc08b9",
+            "id": "7c134576-d8fa-4757-98f3-07d86949ec53",
             "operatives": [
               {
                 "first_name": "Arya",
@@ -393,7 +365,7 @@
             "estimated_completion_time": 1712402100000
           },
           {
-            "id": "45d535c6-bd86-42d9-b5fc-134dd07eb563",
+            "id": "f4322bfe-fb87-40f0-8713-81f2bc573554",
             "operatives": [
               {
                 "first_name": "Loretta",
@@ -425,50 +397,114 @@
         ]
       },
       {
+        "id": "c90eec32-df39-ed65-9ed2-9583687fb7f4",
         "date": 1713484800000,
         "visits": []
       },
       {
+        "id": "a90eecf2-dtb9-4dh5-9352-9c5318yf46f4",
         "date": 1713571200000,
         "visits": []
       },
       {
+        "id": "g90h9c32-jfb9-4j65-63d2-9c83687fb6f4",
         "date": 1713657600000,
         "visits": []
       },
       {
+        "id": "h90e9ch2-dfd9-gd65-9gd2-9cs3187fb6f4",
         "date": 1713744000000,
         "visits": []
       },
       {
+        "id": "cs0e9c42-d4b9-4de5-94d2-9c83187fb6f5",
         "date": 1713830400000,
         "visits": []
       },
       {
+        "id": "a9c3d738-5a47-40f1-bc14-8d01b7f1556e",
         "date": 1713916800000,
-        "visits": []
+        "visits": [
+          {
+            "id": "09655557-7d28-4e5f-8230-573b7956780a",
+            "operatives": [
+              {
+                "first_name": "Arya",
+                "last_name": "Stark"
+              }
+            ],
+            "start_time": 1712575200000,
+            "site": {
+              "client": "Google",
+              "address_line_1": "Google lane",
+              "post_code": "NE1ABC",
+              "city": "Nottingham"
+            },
+            "task": "HEDGE_PRUNING",
+            "estimated_completion_time": 1712577000000,
+            "order": 1
+          }
+        ]
       },
       {
+        "id": "a90e9432-d6b9-4di5-9hd2-9c8j187db6f4",
         "date": 1714003200000,
         "visits": []
       },
       {
+        "id": "49059c32-d6b9-4d65-9372-9c88487fb5f4",
         "date": 1714089600000,
         "visits": []
       },
       {
+        "id": "c93e9c32-dft9-4d65-93d2-9c831y7fb6fu",
         "date": 1714176000000,
         "visits": []
       },
       {
+        "id": "c90e9c32-dfb9-4d65-93d2-9c83187fb6f4",
         "date": 1714262400000,
+        "visits": [
+          {
+            "id": "bcb80b30-efa4-4787-834f-fbcaae48cd38",
+            "operatives": [
+              {
+                "first_name": "Tony",
+                "last_name": "Stark"
+              },
+              {
+                "first_name": "Thor",
+                "last_name": "Odinson"
+              },
+              {
+                "first_name": "Natasha",
+                "last_name": "Romanoff"
+              }
+            ],
+            "start_time": 1712161200000,
+            "site": {
+              "client": "Google",
+              "address_line_1": "Google lane",
+              "post_code": "NE1ABC",
+              "city": "Nottingham"
+            },
+            "task": "LAWN_SOWING",
+            "estimated_completion_time": 1712169000000,
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "3fgc45hc-0bt6-445a-a41c-94828b6977e8",
+        "date": 1714348800000,
         "visits": []
       },
       {
-        "date": 1714348800000,
+        "id": "3f1c2d4c-0b26-449a-a4ec-9e828b1977e8",
+        "date": 1714435200000,
         "visits": [
           {
-            "id": "c2669a5b-a768-4347-b392-a9195d17af72",
+            "id": "96220676-89cc-4125-b0a4-1d3a2fde102c",
             "operatives": [
               {
                 "first_name": "Arya",
@@ -491,19 +527,18 @@
               "city": "Nottingham"
             },
             "task": "LAWN_MOWING",
-            "estimated_completion_time": 1712164800000
+            "estimated_completion_time": 1712164800000,
+            "order": 1
           }
         ]
       },
       {
-        "date": 1714435200000,
-        "visits": []
-      },
-      {
+        "id": "31gca5hf-1rtr-445a-a1gg-96h28b6977e8",
         "date": 1714521600000,
         "visits": []
       },
       {
+        "id": "11gcs5hf-1htr-4j5a-aagg-96h28bg97hes",
         "date": 1714521600000,
         "visits": []
       }

@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import sizes from "../../contants/sizes";
-import Card from "../Card.styles";
 
 const Heading = styled.div`
   width: 40%;
   padding: ${sizes.spacer};
 `;
 
-const Container = styled(Card)`
+const Container = styled.li`
   width: 100%;
   margin: ${sizes.spacer2} 0;
 `;

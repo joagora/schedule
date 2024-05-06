@@ -19,6 +19,7 @@ import {
   Droppable,
   DroppableProvided,
 } from "react-beautiful-dnd";
+import Card from "../Card.styles";
 
 const ScheduleDay = ({ item }: { item: ScheduleItem }) => {
   const numberOfOperatives = useMemo(() => {
@@ -34,55 +35,56 @@ const ScheduleDay = ({ item }: { item: ScheduleItem }) => {
       moment(a.start_time).diff(moment(b.start_time))
     )[0].start_time;
   }, [item]);
-
   return (
     <Container>
-      <Flex>
-        <Heading>
-          <H1>{getWeekDay(item.date)}</H1>
-          <H3>{getFormattedDate(item.date)}</H3>
-          <SubtitleContainer>
-            <Subtitle>Operatives: {numberOfOperatives}</Subtitle>
-            <Subtitle>
-              Start time:{" "}
-              {scheduleStartTime && getFormattedTime(scheduleStartTime)}
-            </Subtitle>
-          </SubtitleContainer>
-        </Heading>
-        <VisitBody>
-          <Droppable key={`${item.date}`} droppableId={`${item.date}`}>
-            {(provided: DroppableProvided) => (
-              <div {...provided.droppableProps} ref={provided.innerRef}>
-                {item.visits.length === 0 && (
-                  <Flex justifyContent="center">
-                    <p>No visits yet</p>
-                  </Flex>
-                )}
-                {item.visits?.map((visit: Visit, index) => {
-                  return (
-                    <Draggable
-                      draggableId={`${visit.id}`}
-                      key={`${visit.id}`}
-                      index={index}
-                    >
-                      {(provided: DraggableProvided) => (
-                        <div
-                          ref={provided.innerRef}
-                          {...provided.draggableProps}
-                          {...provided.dragHandleProps}
-                        >
-                          <VisitTile visit={visit} index={index} />
-                        </div>
-                      )}
-                    </Draggable>
-                  );
-                })}
-                {provided.placeholder}
-              </div>
-            )}
-          </Droppable>
-        </VisitBody>
-      </Flex>
+      <Card>
+        <Flex>
+          <Heading>
+            <H1>{getWeekDay(item.date)}</H1>
+            <H3>{getFormattedDate(item.date)}</H3>
+            <SubtitleContainer>
+              <Subtitle>Operatives: {numberOfOperatives}</Subtitle>
+              <Subtitle>
+                Start time:{" "}
+                {scheduleStartTime && getFormattedTime(scheduleStartTime)}
+              </Subtitle>
+            </SubtitleContainer>
+          </Heading>
+          <VisitBody>
+            <Droppable key={`${item.date}`} droppableId={`${item.date}`}>
+              {(provided: DroppableProvided) => (
+                <div {...provided.droppableProps} ref={provided.innerRef}>
+                  {item.visits.length === 0 && (
+                    <Flex justifyContent="center">
+                      <p>No visits yet</p>
+                    </Flex>
+                  )}
+                  {item.visits?.map((visit: Visit, index) => {
+                    return (
+                      <Draggable
+                        draggableId={`${visit.id}`}
+                        key={`${visit.id}`}
+                        index={index}
+                      >
+                        {(provided: DraggableProvided) => (
+                          <div
+                            ref={provided.innerRef}
+                            {...provided.draggableProps}
+                            {...provided.dragHandleProps}
+                          >
+                            <VisitTile visit={visit} index={index} />
+                          </div>
+                        )}
+                      </Draggable>
+                    );
+                  })}
+                  {provided.placeholder}
+                </div>
+              )}
+            </Droppable>
+          </VisitBody>
+        </Flex>
+      </Card>
     </Container>
   );
 };

@@ -70,11 +70,7 @@ const Planner = () => {
     <Background flexDirection="column" alignItems="center">
       <Container>
         <DragDropContext onDragEnd={onDragEnd}>
-          <Droppable
-            key="schedule-days"
-            droppableId="schedule-days"
-            type="droppableItem"
-          >
+          <Droppable droppableId="schedule-days" type="droppableItem">
             {(provided: DroppableProvided) => (
               <div ref={provided.innerRef}>
                 {items.map((item: ScheduleItem, index: number) => {
