@@ -1,10 +1,35 @@
 import { useMemo } from "react";
 import { Visit } from "../../types";
 import moment from "moment";
-import { H3 } from "../Header.styles";
-import { Section, Wrapper, Info } from "./VisitTile.styles";
+import { Section, Wrapper, Info, Icon } from "./VisitTile.styles";
 import Flex from "../Flex.styles";
 import { getFormattedTime } from "../utils";
+import { GiHighGrass, GiPlantSeed, GiShears } from "react-icons/gi";
+import { H3 } from "../Header.styles";
+
+const getTaskMapping = (
+  taskName: string
+): { humanReadable?: string; icon?: React.ReactElement } => {
+  switch (taskName) {
+    case "LAWN_SOWING":
+      return {
+        humanReadable: "Lawn sowing",
+        icon: <GiPlantSeed />,
+      };
+    case "LAWN_MOWING":
+      return {
+        humanReadable: "Lawn mowing",
+        icon: <GiHighGrass />,
+      };
+    case "HEDGE_PRUNING":
+      return {
+        humanReadable: "Hedge pruning",
+        icon: <GiShears />,
+      };
+    default:
+      return { humanReadable: undefined, icon: undefined };
+  }
+};
 
 const VisitTile = ({ visit }: { visit: Visit }) => {
   const visitDuration = useMemo(() => {
@@ -21,12 +46,21 @@ const VisitTile = ({ visit }: { visit: Visit }) => {
     return `${hoursHumanReadable} ${minutesHumanReadable}`;
   }, [visit]);
 
+  const taskMapping = useMemo(() => {
+    return getTaskMapping(visit.task);
+  }, [visit.task]);
+
   return (
     <Wrapper>
       <Flex justifyContent="space-around">
         <Section size={2}>
-          <H3>{visit.task}</H3>
-          <p>{visitDuration}</p>
+          <Flex>
+            <Icon>{taskMapping.icon}</Icon>
+            <div>
+              <H3>{taskMapping.humanReadable}</H3>
+              <p>{visitDuration}</p>
+            </div>
+          </Flex>
         </Section>
         <Section size={2}>
           <p>Client: {visit.site.client}</p>

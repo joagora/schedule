@@ -21,7 +21,7 @@
             "post_code": "SE1ABC",
             "city": "London"
           },
-          "task": "Lawn mowing",
+          "task": "LAWN_SOWING",
           "estimated_completion_time": 1711974600000
         }
       ]
@@ -55,7 +55,7 @@
             "post_code": "NE1ABC",
             "city": "Nottingham"
           },
-          "task": "Lawn sowing",
+          "task": "LAWN_SOWING",
           "estimated_completion_time": 1712169000000
         },
         {
@@ -81,7 +81,7 @@
             "post_code": "NE1ABC",
             "city": "Nottingham"
           },
-          "task": "Lawn mowing",
+          "task": "LAWN_MOWING",
           "estimated_completion_time": 1712164800000
         }
       ]
@@ -115,7 +115,7 @@
             "post_code": "SE123AB",
             "city": "London"
           },
-          "task": "Lawn sowing",
+          "task": "HEDGE_PRUNING",
           "estimated_completion_time": 1712322000000
         },
         {
@@ -141,7 +141,7 @@
             "post_code": "NE1ABC",
             "city": "Nottingham"
           },
-          "task": "Lawn mowing",
+          "task": "LAWN_MOWING",
           "estimated_completion_time": 1712307000000
         }
       ]
@@ -164,7 +164,7 @@
             "post_code": "NE1ABC",
             "city": "Nottingham"
           },
-          "task": "Lawn mowing",
+          "task": "HEDGE_PRUNING",
           "estimated_completion_time": 1712402100000
         },
         {
@@ -193,7 +193,7 @@
             "post_code": "NE1ABC",
             "city": "Nottingham"
           },
-          "task": "Trim hedge",
+          "task": "LAWN_SOWING",
           "estimated_completion_time": 1712409300000
         }
       ]
@@ -220,7 +220,7 @@
             "post_code": "NE1ABC",
             "city": "Nottingham"
           },
-          "task": "Lawn mowing",
+          "task": "HEDGE_PRUNING",
           "estimated_completion_time": 1712577000000
         },
         {
@@ -237,7 +237,7 @@
             "post_code": "WS15 1SS",
             "city": "Hawksyard"
           },
-          "task": "Trim hedge",
+          "task": "LAWN_MOWING",
           "estimated_completion_time": 1712592600000
         }
       ]

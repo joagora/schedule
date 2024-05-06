@@ -3,10 +3,14 @@ import ScheduleDay from "../../components/ScheduleDay/ScheduleDay";
 import { ScheduleItem } from "../../types.js";
 import Container from "./Planner.styles";
 import Flex from "../../components/Flex.styles";
+import styled from "styled-components";
+import colors from "../../contants/colors";
 
+const Background = styled(Flex)`
+  background-color: ${colors.background};
+`;
 const Planner = () => {
   const { data, isLoading, error } = useFetch("http://localhost:8080/schedule");
-  console.log("data: ", data);
 
   if (!data || isLoading) {
     return <p>Loading...</p>;
@@ -17,13 +21,13 @@ const Planner = () => {
   }
 
   return (
-    <Flex flexDirection="column" alignItems="center">
+    <Background flexDirection="column" alignItems="center">
       <Container>
         {data.map((item: ScheduleItem) => {
           return <>{item.visits.length !== 0 && <ScheduleDay item={item} />}</>;
         })}
       </Container>
-    </Flex>
+    </Background>
   );
 };
 

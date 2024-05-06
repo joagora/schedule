@@ -10,11 +10,18 @@ const Section = styled.div<{ size: 1 | 2 | 3 }>`
 
 const Wrapper = styled.div`
   padding: ${sizes.spacer2};
-  border: 1px solid ${colors.borderOpaque};
+  margin: ${sizes.spacer};
+  border: 1px solid ${colors.border};
   border-radius: ${sizes.radius};
+  background-color: ${colors.foreground};
 `;
 
 const Info = styled.p`
   font-size: xx-small;
 `;
-export { Subtitle, Section, Wrapper, Info };
+
+const Icon = styled.i`
+  color: ${colors.success};
+  padding: 0 ${sizes.spacer};
+`;
+export { Subtitle, Section, Wrapper, Info, Icon };

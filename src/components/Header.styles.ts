@@ -6,17 +6,17 @@ interface HeaderProps {
   color?: string;
 }
 const H1 = styled.h1<HeaderProps>`
-  color: ${(props) => props.color || colors.foreground};
+  color: ${(props) => props.color || colors.text};
   font-size: ${sizes.typographyH1};
 `;
 
 const H2 = styled.h2<HeaderProps>`
-  color: ${(props) => props.color || colors.foreground};
+  color: ${(props) => props.color || colors.text};
   font-size: ${sizes.typographyH2};
 `;
 
 const H3 = styled.h3<HeaderProps>`
-  color: ${(props) => props.color || colors.foreground};
+  color: ${(props) => props.color || colors.text};
   font-size: ${sizes.typographyH3};
 `;
 
