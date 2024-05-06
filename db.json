@@ -1,0 +1,338 @@
+{
+  "schedule": [
+    {
+      "date": 1711929600000,
+      "visits": [
+        {
+          "operatives": [
+            {
+              "first_name": "John",
+              "last_name": "McClane"
+            },
+            {
+              "first_name": "Robert",
+              "last_name": "De Niro"
+            }
+          ],
+          "start_time": 1711967400000,
+          "site": {
+            "client": "Microsoft",
+            "address_line_1": "Microsoft lane",
+            "post_code": "SE1ABC",
+            "city": "London"
+          },
+          "task": "Lawn mowing",
+          "estimated_completion_time": 1711974600000
+        }
+      ]
+    },
+    {
+      "date": 1712016000000,
+      "visits": []
+    },
+    {
+      "date": 1712102400000,
+      "visits": [
+        {
+          "operatives": [
+            {
+              "first_name": "Tony",
+              "last_name": "Stark"
+            },
+            {
+              "first_name": "Thor",
+              "last_name": "Odinson"
+            },
+            {
+              "first_name": "Natasha",
+              "last_name": "Romanoff"
+            }
+          ],
+          "start_time": 1712161200000,
+          "site": {
+            "client": "Google",
+            "address_line_1": "Google lane",
+            "post_code": "NE1ABC",
+            "city": "Nottingham"
+          },
+          "task": "Lawn sowing",
+          "estimated_completion_time": 1712169000000
+        },
+        {
+          "operatives": [
+            {
+              "first_name": "Arya",
+              "last_name": "Stark"
+            },
+            {
+              "first_name": "Rob",
+              "last_name": "Stark"
+            },
+            {
+              "first_name": "Harry",
+              "last_name": "Potter"
+            }
+          ],
+
+          "start_time": 1712157600000,
+          "site": {
+            "client": "Google",
+            "address_line_1": "Google lane",
+            "post_code": "NE1ABC",
+            "city": "Nottingham"
+          },
+          "task": "Lawn mowing",
+          "estimated_completion_time": 1712164800000
+        }
+      ]
+    },
+    {
+      "date": 1712188800000,
+      "visits": []
+    },
+    {
+      "date": 1712275200000,
+      "visits": [
+        {
+          "operatives": [
+            {
+              "first_name": "Tony",
+              "last_name": "Stark"
+            },
+            {
+              "first_name": "Thor",
+              "last_name": "Odinson"
+            },
+            {
+              "first_name": "Natasha",
+              "last_name": "Romanoff"
+            }
+          ],
+          "start_time": 1712312400000,
+          "site": {
+            "client": "Apply",
+            "address_line_1": "Apple lane",
+            "post_code": "SE123AB",
+            "city": "London"
+          },
+          "task": "Lawn sowing",
+          "estimated_completion_time": 1712322000000
+        },
+        {
+          "operatives": [
+            {
+              "first_name": "Arya",
+              "last_name": "Stark"
+            },
+            {
+              "first_name": "Rob",
+              "last_name": "Stark"
+            },
+            {
+              "first_name": "Harry",
+              "last_name": "Potter"
+            }
+          ],
+
+          "start_time": 1712303100000,
+          "site": {
+            "client": "Google",
+            "address_line_1": "Google lane",
+            "post_code": "NE1ABC",
+            "city": "Nottingham"
+          },
+          "task": "Lawn mowing",
+          "estimated_completion_time": 1712307000000
+        }
+      ]
+    },
+    {
+      "date": 1712361600000,
+      "visits": [
+        {
+          "operatives": [
+            {
+              "first_name": "Arya",
+              "last_name": "Stark"
+            }
+          ],
+
+          "start_time": 1712394000000,
+          "site": {
+            "client": "Google",
+            "address_line_1": "Google lane",
+            "post_code": "NE1ABC",
+            "city": "Nottingham"
+          },
+          "task": "Lawn mowing",
+          "estimated_completion_time": 1712402100000
+        },
+        {
+          "operatives": [
+            {
+              "first_name": "Loretta",
+              "last_name": "Hughes"
+            },
+            {
+              "first_name": "Conrad",
+              "last_name": "Page"
+            },
+            {
+              "first_name": "Jon",
+              "last_name": "Baril"
+            },
+            {
+              "first_name": "Ron",
+              "last_name": "Edwards"
+            }
+          ],
+          "start_time": 1712405700000,
+          "site": {
+            "client": "Google",
+            "address_line_1": "Google lane",
+            "post_code": "NE1ABC",
+            "city": "Nottingham"
+          },
+          "task": "Trim hedge",
+          "estimated_completion_time": 1712409300000
+        }
+      ]
+    },
+    {
+      "date": 1712448000000,
+      "visits": []
+    },
+    {
+      "date": 1712534400000,
+      "visits": [
+        {
+          "operatives": [
+            {
+              "first_name": "Arya",
+              "last_name": "Stark"
+            }
+          ],
+
+          "start_time": 1712575200000,
+          "site": {
+            "client": "Google",
+            "address_line_1": "Google lane",
+            "post_code": "NE1ABC",
+            "city": "Nottingham"
+          },
+          "task": "Lawn mowing",
+          "estimated_completion_time": 1712577000000
+        },
+        {
+          "operatives": [
+            {
+              "first_name": "Regina",
+              "last_name": "Lau"
+            }
+          ],
+          "start_time": 1712587800000,
+          "site": {
+            "client": "John Doe",
+            "address_line_1": "2 Upper Bannisters Way",
+            "post_code": "WS15 1SS",
+            "city": "Hawksyard"
+          },
+          "task": "Trim hedge",
+          "estimated_completion_time": 1712592600000
+        }
+      ]
+    },
+    {
+      "date": 1712620800000,
+      "visits": []
+    },
+    {
+      "date": 1712707200000,
+      "visits": []
+    },
+    {
+      "date": 1712793600000,
+      "visits": []
+    },
+    {
+      "date": 1712880000000,
+      "visits": []
+    },
+    {
+      "date": 1713052800000,
+      "visits": []
+    },
+    {
+      "date": 1713139200000,
+      "visits": []
+    },
+    {
+      "date": 1713225600000,
+      "visits": []
+    },
+    {
+      "date": 1713312000000,
+      "visits": []
+    },
+    {
+      "date": 1713398400000,
+      "visits": []
+    },
+    {
+      "date": 1713484800000,
+      "visits": []
+    },
+    {
+      "date": 1713571200000,
+      "visits": []
+    },
+    {
+      "date": 1713657600000,
+      "visits": []
+    },
+    {
+      "date": 1713744000000,
+      "visits": []
+    },
+    {
+      "date": 1713830400000,
+      "visits": []
+    },
+    {
+      "date": 1713916800000,
+      "visits": []
+    },
+    {
+      "date": 1714003200000,
+      "visits": []
+    },
+    {
+      "date": 1714089600000,
+      "visits": []
+    },
+    {
+      "date": 1714176000000,
+      "visits": []
+    },
+    {
+      "date": 1714262400000,
+      "visits": []
+    },
+    {
+      "date": 1714348800000,
+      "visits": []
+    },
+    {
+      "date": 1714435200000,
+      "visits": []
+    },
+    {
+      "date": 1714521600000,
+      "visits": []
+    },
+    {
+      "date": 1714521600000,
+      "visits": []
+    }
+  ]
+}
